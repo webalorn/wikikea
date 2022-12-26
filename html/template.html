@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title}} - WikIKEA</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="logo.png" id="logo" /></a>
+            <div id="title">
+                <span>The Free Wiki to build yourself at home</span>
+            </div>
+        </header><!--
+        --><aside>
+            <h3>Wiki pages</h3>
+            <ul>
+                {{aside}}
+            </ul>
+        </aside><!--
+        --><article>
+            <a id="edit" href="https://github.com/{{github_username}}/{{github_repository}}/edit/main/{{source_file_path}}"><img src="edit.png"/></a>
+            <h1>{{title}}</h1>
+            {{content}}
+        </article>
+        <footer>
+            WikIKEA is the most serious build-at-home wiki system. Seriously. <a href="about.html">Look here to know more</a>.
+        </footer>
+    </body>
+</html>
