@@ -1,0 +1,32 @@
+name: update-wiki
+run-name: Updating wiki pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  update-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Build html pages using python script
+        run: python build.py
+      - name: push changes
+        run: |
+          rm .gitignore
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@users.noreply.github.com'
+          git add html_pages/*
+          git commit -m "Wiki update"
+          git push origin `git subtree split --prefix html_pages main`:wiki --force
