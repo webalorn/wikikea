@@ -16,6 +16,7 @@ aside_index: 0
 ![](instructions/ins6.png)
 ![](instructions/ins7.png)
 ![](instructions/ins8.png)
+![](instructions/ins9.png)
 
 </div>
 
