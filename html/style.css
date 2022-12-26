@@ -68,6 +68,29 @@ aside ul li {
     margin-bottom: 0.4em;
 }
 
+#aside_bottom_section {
+    text-align: center;
+}
+.a_button {
+    width: 2em;
+    height: 2em;
+    margin: 0px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: white;
+    display: inline-block;
+    margin: 0.5em;
+}
+.a_button:hover {
+    background-color: #f6f6f6;
+}
+.a_button img {
+    margin: 10%;
+    width: 80%;
+    height: 80%;
+}
+
 /*
     Content
 */
@@ -88,27 +111,10 @@ article {
     max-width: 100%;
     flex-grow: 1;
     padding: 1em;
-    position: relative;
 }
 .instructions img {
     width: 45em;
     max-width: 100%;
-}
-#edit {
-    width: 35px;
-    height: 35px;
-    margin: 0px;
-    padding: 3px;
-    position: absolute;
-    border: 1px solid black;
-    border-radius: 4px;
-    background-color: rgb(234, 234, 234);
-    top: 3px;
-    right: 3px;
-}
-#edit img {
-    width: 100%;
-    height: 100%;
 }
 
 /*
@@ -149,7 +155,7 @@ footer {
         font-size: 1.2em;
     }
     aside ul {
-        column-count: 3;
+        column-count: 2;
         column-gap: 20px;
         width: 100%;
         font-size: 1.2em;

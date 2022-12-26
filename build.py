@@ -8,7 +8,7 @@ TEMPLATE_PAGE = 'html/template.html'
 CONFIG_FILE = 'configuration.json'
 LINK_TEMPLATE = '<li><a href="{{url}}">{{title}}</a></li>'
 COPY_FILES = {
-    'html' : ['style.css', 'logo.png', 'edit.png'],
+    'html' : ['style.css', 'logo.png', 'edit.png', 'new.png'],
 }
 SOURCE_DIR = 'pages'
 TARGET_DIR = 'html_pages'

@@ -17,9 +17,12 @@
             <ul>
                 {{aside}}
             </ul>
+            <div id="aside_bottom_section">
+                <a class="a_button" href="https://github.com/{{github_username}}/{{github_repository}}/edit/main/pages/{{source_file_path}}"><img src="edit.png"/></a>
+                <a class="a_button" href="https://github.com/{{github_username}}/{{github_repository}}/new/main/pages?filename=new_page_name.md"><img src="new.png"/></a>
+            </div>
         </aside><!--
         --><article>
-            <a id="edit" href="https://github.com/{{github_username}}/{{github_repository}}/edit/main/pages/{{source_file_path}}"><img src="edit.png"/></a>
             <h1>{{title}}</h1>
             {{content}}
         </article>
