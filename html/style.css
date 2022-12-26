@@ -83,7 +83,7 @@ article {
     font-family: sans-serif;
     background: white;
     border: 1px solid #a7d7f9;
-    border-right: none;
+    /* border-right: none; */
     width: 35em;
     max-width: 100%;
     flex-grow: 1;
@@ -120,4 +120,45 @@ footer {
     margin-top: 1em;
     font-style: italic;
     text-align: center;
+}
+
+/*
+    Mobile
+*/
+@media only screen and (max-device-width: 768px) {
+	body {
+		font-size: 190%;
+        display: block;
+	}
+    body > * {
+        width: 100%;
+    }
+    header {
+        display: block;
+        text-align: center;
+    }
+    header > a {
+        display: block;
+        width: 100%;
+    }
+    header #title {
+        height: auto;
+        line-height: 1.25em;
+    }
+    aside h3 {
+        font-size: 1.2em;
+    }
+    aside ul {
+        column-count: 3;
+        column-gap: 20px;
+        width: 100%;
+        font-size: 1.2em;
+    }
+    article {
+        /* border-left: none; */
+        font-size: 0.7em;
+    }
+    footer {
+        font-size: 0.9em;
+    }
 }
